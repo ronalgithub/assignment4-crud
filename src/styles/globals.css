@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+ @layer base {
+    h2 {
+        @apply font-bold text-secondary-content text-lg  text-center ;
+    }
+    h3 {
+        @apply font-semibold text-secondary-content text-sm text-center;
+    } 
+   
+    input, textarea {
+        @apply block px-2 py-2 w-full rounded-md border-b 
+        
+    }
+    p {
+        @apply font-mono text-secondary-content font-semibold text-center
+    }
+}
+
+@layer components {
+   .classButton {
+        @apply btn cursor-pointer text-secondary-content rounded-3xl
+    }
+    .classHeaderNav
+    {
+        @apply btn btn-ghost text-[18px]
+    }
+   
+} 
