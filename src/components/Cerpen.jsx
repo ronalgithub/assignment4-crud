@@ -74,7 +74,7 @@ export const Cerpen = ({item}) => {
                 </div>
                 {/* <p>{item.deskripsi}</p> */}
                 <p>Pesan Moral:</p>
-                <p>&quot;{item.pesanmoral}&quot;"</p>
+                <p>&quot;{item.pesanmoral}&quot;</p>
                 <div className="classButton"> <Link  href={`/cerpen/${idCerpen}`}>Selengkapnya</Link></div>
                 <button className="classButton" onClick={handleHapusCerpen}>Hapus Cerpen</button>
                 <button className="classButton" onClick={()=>setEditMode(true)}>Edit Cerpen</button>
