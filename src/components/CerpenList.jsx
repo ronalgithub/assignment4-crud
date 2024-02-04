@@ -8,7 +8,7 @@ export const CerpenList = ({dataCerpen}) => {
     <main className="card grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {dataCerpen.map((item, index)=> {
           return (
-            <Cerpen item={item} />
+            <Cerpen item={item} key={index} />
           )      
           })}
     </main>
