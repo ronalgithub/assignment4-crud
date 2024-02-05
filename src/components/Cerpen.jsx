@@ -61,24 +61,25 @@ export const Cerpen = ({item}) => {
   return (
     
             <div key={item._id} 
-              className=" bg-primary rounded-xl ">
-              <div className="flex gap-3 flex-col p-4 ">
-                <h2>{item.judul} </h2> 
-                <div><Image 
-                  className="rounded-2xl hover:scale-105 transition duration-500  w-[400px] h-[250px] object-cover object-center " 
+              className=" rounded-3xl m-4 w-100 bg-primary shadow-2xl shadow-secondary">
+              {/* <div className="flex gap-3 flex-col p-4 "> */}
+                <figure><Image 
+                   className="hover:scale-105 transition duration-500  w-[400px] h-[250px] object-cover " 
                   src={item.gambar} 
                   width={400} 
                   height={400} 
                   alt="Image Cerpen"
                   />
-                </div>
-                {/* <p>{item.deskripsi}</p> */}
-                <p>Pesan Moral:</p>
-                <p>&quot;{item.pesanmoral}&quot;</p>
-                <div className="classButton"> <Link  href={`/cerpen/${idCerpen}`}>Selengkapnya</Link></div>
-                <button className="classButton" onClick={handleHapusCerpen}>Hapus Cerpen</button>
-                <button className="classButton" onClick={()=>setEditMode(true)}>Edit Cerpen</button>
-                </div>    
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title justify-center">{item.judul} </h2> 
+                  <p>Pesan Moral:</p>
+                  <p>&quot;{item.pesanmoral}&quot;</p>
+                  <div className="classButton"> <Link  href={`/cerpen/${idCerpen}`}>Selengkapnya</Link></div>
+                  <button className="classButton" onClick={handleHapusCerpen}>Hapus Cerpen</button>
+                  <button className="classButton" onClick={()=>setEditMode(true)}>Edit Cerpen</button>
+                  </div> 
+                {/* </div>    */}
             </div>
             
         
